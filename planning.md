@@ -54,11 +54,15 @@ This knowledge is difficult to find because student feedback is scattered across
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
-**Chunk size:**
+**Chunk size:** 300–400 tokens
 
-**Overlap:**
+**Overlap:** 50–75 tokens
 
-**Reasoning:**
+**Reasoning:** My documents are a mix of Rate My Professors reviews and Reddit discussions. Most are fairly short, just a few sentences or a paragraph. Rate My Professors has many reviews per professor, which helps give a fuller picture. Reddit posts tend to be more detailed and conversational.
+
+I chose a chunk size of 300 to 400 tokens so each chunk holds one complete review without mixing in unrelated opinions. The overlap of 50 to 75 tokens acts as a buffer. It repeats a few sentences between chunks so no chunk loses the context it needs to make sense on its own.
+
+If chunks are too small, a review gets cut off and loses its meaning. If chunks are too large, multiple unrelated reviews get grouped together, making it harder to find the right one.
 
 ---
 
@@ -70,11 +74,15 @@ This knowledge is difficult to find because student feedback is scattered across
      would you weigh in choosing a different embedding model — context length, multilingual
      support, accuracy on domain-specific text, latency? -->
 
-**Embedding model:**
+**Embedding model:** all-MiniLM-L6-v2 via sentence-transformers
 
-**Top-k:**
+**Top-k:** 5
 
-**Production tradeoff reflection:**
+**Reasoning:** This model searches by meaning, not just matching exact words. So if a student asks "is this professor a hard grader?" it can still find a review that says "she grades very strictly" even though the words are different.
+
+I set top-k to 5, meaning the system pulls the 5 most relevant chunks for each question. This gives enough variety to show different student opinions without flooding the response with too much unrelated content.
+
+**Production tradeoff reflection:** For a real deployment, I would look into larger models with better accuracy, but this model is a solid and practical choice for this project.
 
 ---
 
@@ -87,11 +95,11 @@ This knowledge is difficult to find because student feedback is scattered across
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | What do students say about Tong Yi's workload or homework difficulty? | Students describe Tong Yi's classes as challenging, with difficult assignments and a heavy workload. |
+| 2 | How do students describe Eric Schweitzer's teaching style or clarity? | Students say Eric Schweitzer gives difficult pop quizzes and expects students to stay on top of the material, but the course is manageable with consistent studying. |
+| 3 | What do students say about Subash Shankar's grading style or fairness? | Students generally describe Subash Shankar as a tough grader with difficult exams and assignments, but note that students who put in the effort can succeed. |
+| 4 | How do students rate Tiziana Ligorio's approachability or office hours? | Students describe Tiziana Ligorio as helpful and approachable, and willing to assist students who seek extra help. |
+| 5 | What is the overall sentiment students express about Saad Mneimneh's courses? | Students generally view Saad Mneimneh's courses as challenging but rewarding, and helpful for developing strong problem-solving skills. |
 
 ---
 
@@ -101,19 +109,22 @@ This knowledge is difficult to find because student feedback is scattered across
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1. **Outdated or biased reviews:** Professors may change their teaching style, grading policies, or course structure over time, which could make older reviews inaccurate or misleading for current students. Additionally, since reviews reflect personal experiences, opinions can vary significantly depending on how much effort a student put into the course — making it difficult to identify patterns that apply broadly.
 
-2.
+2. **Irrelevant or incomplete retrieval:** The retrieval system may return chunks that are not fully relevant to the user's question. This could happen if reviews share similar keywords but discuss different topics, causing the system to surface loosely related content. There is also a risk that important context gets split across chunk boundaries, so the system retrieves only part of an opinion without the full picture.
 
 ---
 
 ## Architecture
 
-<!-- Draw a diagram of your pipeline showing the five stages:
-     Document Ingestion → Chunking → Embedding + Vector Store → Retrieval → Generation
-     Label each stage with the tool or library you're using.
-     You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
-     You'll use this diagram as context when prompting AI tools to implement each stage. -->
+```mermaid
+flowchart LR
+    A[Document Ingestion\nRate My Professors\nReddit] --> B[Chunking\n300-400 tokens\n50-75 token overlap]
+    B --> C[Embedding\nall-MiniLM-L6-v2]
+    C --> D[Vector Store\nChromaDB]
+    D --> E[Retrieval\nSimilarity Search\ntop-k = 5]
+    E --> F[Generation\nClaude LLM\nSource Attribution]
+```
 
 ---
 
@@ -129,8 +140,8 @@ This knowledge is difficult to find because student feedback is scattered across
      "I'll give Claude my Chunking Strategy section and ask it to implement chunk_text()
      with my specified chunk size and overlap" is a plan. -->
 
-**Milestone 3 — Ingestion and chunking:**
+**Milestone 3 — Ingestion and chunking:** I will give Claude my Chunking Strategy section and ask it to write a `chunk_text()` function that splits documents into 300 to 400 token chunks with 50 to 75 token overlap. I will check that reviews are not being cut off mid-sentence or merged with unrelated ones.
 
-**Milestone 4 — Embedding and retrieval:**
+**Milestone 4 — Embedding and retrieval:** I will give Claude my Retrieval Approach section and ask it to write code that stores embeddings in ChromaDB and retrieves the top 5 most relevant chunks for a user's question. I will test it by asking questions and checking that the returned chunks actually relate to what was asked.
 
-**Milestone 5 — Generation and interface:**
+**Milestone 5 — Generation and interface:** I will use Claude to help write prompts that tell the LLM how to summarize reviews and highlight key themes, while only using information from the retrieved chunks. I will check the output by running my 5 evaluation questions and comparing the answers to what I expected.
