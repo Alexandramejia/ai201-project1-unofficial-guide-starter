@@ -123,7 +123,7 @@ flowchart LR
     B --> C[Embedding\nall-MiniLM-L6-v2]
     C --> D[Vector Store\nChromaDB]
     D --> E[Retrieval\nSimilarity Search\ntop-k = 5]
-    E --> F[Generation\nClaude LLM\nSource Attribution]
+    E --> F[Generation\nGroq llama-3.3-70b-versatile\nSource Attribution]
 ```
 
 ---
@@ -144,4 +144,4 @@ flowchart LR
 
 **Milestone 4 — Embedding and retrieval:** I will give Claude my Retrieval Approach section and ask it to write code that stores embeddings in ChromaDB and retrieves the top 5 most relevant chunks for a user's question. I will test it by asking questions and checking that the returned chunks actually relate to what was asked.
 
-**Milestone 5 — Generation and interface:** I will use Claude to help write prompts that tell the LLM how to summarize reviews and highlight key themes, while only using information from the retrieved chunks. I will check the output by running my 5 evaluation questions and comparing the answers to what I expected.
+**Milestone 5 — Generation and interface:** I used Claude to help write the system prompt and user message structure for Groq's llama-3.3-70b-versatile, instructing the model to summarize reviews and highlight key themes using only the retrieved chunks as context. I verified the output by running all 10 sample questions and all 5 evaluation questions, comparing answers to expected results.
