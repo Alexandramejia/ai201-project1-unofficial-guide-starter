@@ -1,0 +1,12 @@
+professor: Subash Shankar
+source: reddit
+url: https://www.reddit.com/r/HunterCollege/comments/1rz0e2c/csci260_w_shankur/
+course: CSCI 260
+===
+Go to office hours and communicate with people early. Ask all the questions you can. Practice daily. Nothing to be scared about, you can do it.
+---
+Oh man you drew the worst CS260 professor. I took this course with Shostak and it's by far easier with him because you only get definition questions. With Shankar my friend told me it was much harder. I wish you the best of luck.
+---
+Pray for the curve.
+---
+This guy and Eric Schweitzer both have bad ratings on Rate My Professors.

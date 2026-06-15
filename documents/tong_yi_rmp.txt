@@ -1,0 +1,14 @@
+professor: Tong Yi
+source: rmp
+url: https://www.ratemyprofessors.com/professor/2634841
+course: CSCI 135
+===
+Not the best lecturer, can be difficult to understand, but gives you just about everything you need to learn the topic on your own and succeed relatively easily. Is helpful over emails, and tries her best, but it is better to self-study for this class rather than solely rely on her lecturing. Study using older tests and you will be just fine. Tags: TOUGH GRADER, PARTICIPATION MATTERS, LOTS OF HOMEWORK
+---
+The best way to pass and get a good grade is by doing all of the homework, labs, and attendance items. Even if you get a 60 on the final, if you submitted everything, you can pass with a B. Make sure to ask questions on every single thing you don't know. TAs and instructors will help you with projects. Grind past exams and you will do well. Tags: LOTS OF HOMEWORK, TEST HEAVY
+---
+Accent is absolutely incomprehensible. Dropped CS after this despite loving coding. Clearly doesn't care about teaching or students learning at all. Entire course was fully self study. Her syllabus literally says if you have a job then you'll fail. Exams are way harder than lectures and quizzes, full of topics never even touched on. No partial credit. Tags: TOUGH GRADER, LOTS OF HOMEWORK, TEST HEAVY
+---
+Class is really hard, you won't learn anything from her, you have to teach everything yourself. The only good thing is that the exams are really based on last semester's exams. She drops one or two things if you missed or did badly on labs or code review quizzes. She's not the best but isn't the worst.
+---
+The professor is beneficial in one-on-one sessions and gives good feedback. She helped me a lot with the projects, but the tests she makes are not easy. Tags: TOUGH GRADER, GIVES GOOD FEEDBACK, LOTS OF HOMEWORK

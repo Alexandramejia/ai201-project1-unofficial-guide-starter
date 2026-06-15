@@ -1,0 +1,14 @@
+professor: Eric Schweitzer
+source: rmp
+url: https://www.ratemyprofessors.com/professor/257192
+course: CS265
+===
+The first time you take Eric, you'll think he's terrible at teaching. The second time, you'll realize how much better he is compared to most CS profs at Hunter. The course was fair but difficult. Focus on quizzes since they're 60% of your grade. You'll likely have to self-learn a lot, but the topics aren't too complex, just taught too abstractly. Tags: GET READY TO READ, BEWARE OF POP QUIZZES, GRADED BY FEW THINGS
+---
+Schweitzer is fair. 15 quizzes with 5 dropped equal 60% of the grade, and the final is 40%. Homework mirrors quizzes. You can tell when a quiz is coming. Bad reviews come from people who skip or slack — even minimal effort means you pass. Quiz average is low but curved. Correct notation really matters. Prep 20 to 30 minutes before class plus steady effort equals likely a B or better. Great notes, tricky material. Tags: TOUGH GRADER, BEWARE OF POP QUIZZES, LECTURE HEAVY
+---
+Entertaining in lectures, but he goes through material quickly, especially for an esoteric subject. Don't miss a class and don't fall behind. If you're not sure about the current lecture's material, learn it before you get swept up. Pop quizzes are 60% of the grade so attendance really matters. If it clicks for you it's elating though. Tags: AMAZING LECTURES, BEWARE OF POP QUIZZES, LECTURE HEAVY
+---
+Taken this guy twice now and I do not recommend. The pop quizzes are 60% of your grade and you need to take them seriously. They're not hard as long as you did the homework or are following along in class. He's okay as a lecturer but you need to take notes because he doesn't post them. Tags: BEWARE OF POP QUIZZES, TEST HEAVY, GRADED BY FEW THINGS
+---
+Professor Eric is one of the best professors I ever had. Course was CSCI 16000. If you don't like the topic of the class it might be tough, especially since the grade was mainly based on pop quizzes and exams. The class is difficult and he may seem scary but as long as you do the homework on your own and understand it, you should be good. Tags: INSPIRATIONAL, BEWARE OF POP QUIZZES, TEST HEAVY

@@ -1,0 +1,14 @@
+professor: Tiziana Ligorio
+source: rmp
+url: https://www.ratemyprofessors.com/professor/815879
+course: CSCI 235
+===
+I love Ligorio, one of the best at Hunter. Her lectures are very good however her projects were filled with errors and confusing instructions. Attendance isn't required but I recommend going because her slides without the lecture can be kind of confusing. I still don't get the hate she gets on here. Tags: AMAZING LECTURES, CLEAR GRADING CRITERIA, CARING
+---
+Very hard to stay engaged in her very boring lectures that she just reads off of. I learned more from YouTube than her lectures, and projects were left to TAs to help with. I always found the same two people in the lab who were not only unhelpful but also very rude and clueless. Take her class if you can teach yourself the material. Tags: TOUGH GRADER, LECTURE HEAVY
+---
+Her slides are detailed and help visualize abstract data structures and explain sample code or theory. I learn a lot just by following the lectures, and that plus the projects made me more confident in solving new problems on the spot. The projects have lots of extra resources and step you through solving it, some of it takes thinking though. Tags: AMAZING LECTURES, CLEAR GRADING CRITERIA, ACCESSIBLE OUTSIDE CLASS
+---
+Professor Ligorio is one of the best professors in the CS department. She's very smart, kind and has a great personality. She got her PhD here at Hunter and she knows her material. If you attend her lectures, she explains concepts very clearly and makes them very fun. She also interacts with students and encourages them to do well. Tags: AMAZING LECTURES, INSPIRATIONAL, CARING
+---
+Amazing professor. Clear about everything, her slides are great, the only homework is 5 projects which makes you understand the material better. Midterm and final are fair. Listen in class, do the projects, and you'll do great. Wish she could teach all CS classes. Tags: ACCESSIBLE OUTSIDE CLASS, CLEAR GRADING CRITERIA, EXTRA CREDIT
